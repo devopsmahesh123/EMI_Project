@@ -1,0 +1,134 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+  color: #333;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-ad {
+  background: #fde68a;
+  color: #7c2d12;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.text-ad p {
+  margin: 0;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  .text-ad {
+    font-size: 13px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 50px;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+main {
+  padding: 20px;
+}
+#emiTable {
+  margin-top: 20px;
+  overflow-x: auto;
+  max-height: 400px;
+}
+
+#emiTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#emiTable th, #emiTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#emiTable th {
+  background: #3b82f6;
+  color: white;
+}
+
+#emiTable tr:nth-child(even) {
+  background: #f0f9ff;
+}
+
+
+.calculator-section {
+  background: #ffffffc7;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  margin: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.adv-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111827;
+  color: #eee;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .adv-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
