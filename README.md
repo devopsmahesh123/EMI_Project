@@ -23,11 +23,6 @@ ssh -i your-key.pem ubuntu@your-ec2-public-ip
 sudo apt update
 sudo apt - y install nginx 
 
-Ensure Nginx is running:
-
-sudo systemctl enable nginx
-sudo systemctl start nginx
-
 ✅ Step 3: Clone Your Repository
 
 git clone https://github.com/devopsmahesh123/EMI_Project.git
@@ -41,7 +36,7 @@ sudo rm /var/www/html/index.nginx-debian.html
 
 Copy your files to Nginx's default web directory:
 
-sudo cp EMI_Project/* /var/www/html/
+sudo cp ~/EMI_Project/* /var/www/html/
 
 
 Restart Nginx to serve your files:
