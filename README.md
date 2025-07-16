@@ -9,11 +9,11 @@ let's deploy it directly to your AWS EC2 instance. Here's the full step-by-step 
 
 ✅ Step 1: SSH Into Your EC2 Instance
 
-ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-ip
-
 Make sure your `.pem` file is secure:
 
 chmod 400 /path/to/your-key.pem
+
+ssh -i your-key.pem ubuntu@your-ec2-public-ip
 
 
 ---
