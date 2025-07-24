@@ -10,45 +10,45 @@ let's deploy it directly to your AWS EC2 instance. Here's the full step-by-step 
 ✅ Step 1: SSH Into Your EC2 Instance
 
 Make sure your `.pem` file is secure:
-
+```bash
 chmod 400 /path/to/your-key.pem
-
+```
+```bash
 ssh -i your-key.pem ubuntu@your-ec2-public-ip
-
-
----
+```
 
 ✅ Step 2: Install Nginx and Git
-
+```bash
 sudo apt update
 sudo apt - y install nginx 
+```
 
 ✅ Step 3: Clone Your Repository
-
+```bash
 git clone https://github.com/devopsmahesh123/EMI_Project.git
-
+```
 ---
 ✅ Step 4: Deploy Your Project
 
 Remove default welcome page:
-
+```bash
 sudo rm /var/www/html/index.nginx-debian.html
-
+```
 Copy your files to Nginx's default web directory:
-
+```bash
 sudo cp ~/EMI_Project/* /var/www/html/
-
+```
 
 Restart Nginx to serve your files:
-
+```bash
 sudo systemctl restart nginx
-
+```
 ✅ Step 5: Test Your Website
 
 Open your browser and visit:
-
+```bash
 http://your-ec2-public-ip
-
+```
 You should now see your EMI Project in action!
 
 
