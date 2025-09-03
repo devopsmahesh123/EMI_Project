@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful EMI & Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+  <div class="header-content">
+    <img src="logo.png" alt="Site Logo" class="logo" />
+    <h1>Smart Finance Tools</h1>
+  </div>
+  <div class="text-ad">
+    <p>🔥 Limited Offer: Get the lowest loan rates today! 🔥</p>
+  </div>
+</header>
+
+  <main>
+    <section class="calculator-section">
+  <h2>EMI Calculator</h2>
+  <div class="emi-calculator">
+    <input type="number" id="loanAmount" placeholder="Loan Amount (₹)" />
+    <input type="number" id="interestRate" placeholder="Interest Rate (%)" />
+    <input type="number" id="loanTenure" placeholder="Tenure (years)" />
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <div id="emiSummary"></div>
+    <div id="emiTable"></div>
+  </div>
+</section>
+
+
+    <section class="calculator-section">
+      <h2>Advanced Calculator</h2>
+      <div class="advanced-calculator">
+        <input type="text" id="advDisplay" readonly/>
+        <div class="adv-buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('+')">+</button>
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('-')">-</button>
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="appendValue('*')">*</button>
+          <button onclick="appendValue('0')">0</button>
+          <button onclick="appendValue('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendValue('/')">/</button>
+          <button onclick="appendValue('Math.sqrt(')">√</button>
+          <button onclick="appendValue('Math.pow(')">xʸ</button>
+          <button onclick="appendValue('Math.sin(')">sin</button>
+          <button onclick="appendValue('Math.cos(')">cos</button>
+          <button onclick="appendValue('Math.tan(')">tan</button>
+          <button onclick="appendValue('Math.log(')">log</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer>
+  <div class="text-ad">
+    <p>⭐ Compare credit cards & save on EMI — Apply now!</p>
+  </div>
+  <p>&copy; 2025 Smart Finance Tools. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
