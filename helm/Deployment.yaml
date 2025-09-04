@@ -1,0 +1,21 @@
+# Replicaset Template
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{.values.deployment.name}}
+spec:
+  # 1 Pod should exist at all times.
+  replicas: {{.values.deployment.replicas}}
+  selector:
+    matchLabels:
+      app: {{.values.deployment.lable}}
+  template:
+    metadata:
+      labels:
+        app: {{.values.deployment.lable}}
+    spec:
+      containers:
+      - name: {{.values.deployment.container}}
+        image: {{.values.deployment.image}}
+        ports:
+        - containerPort: {{.values.deployment.port}}
