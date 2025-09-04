@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: decopsmahesh123/lms-app
         ports:
         - containerPort: 80
