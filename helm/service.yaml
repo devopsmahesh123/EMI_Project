@@ -7,6 +7,6 @@ spec:
   selector:
     app: {{.values.service.lable}}
   ports:
-    - protocal: TCP
+    - protocol: TCP
       port: {{.values.service.lable}}
       nodePort: {{.values.service.nodeport}}
