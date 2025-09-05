@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: lms
-        image: decopsmahesh123/lms-app
+        image: devopsmahesh123/emi_project
         ports:
         - containerPort: 80
 ---
